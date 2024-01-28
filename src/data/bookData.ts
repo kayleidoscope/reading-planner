@@ -1,5 +1,6 @@
-interface iBooksItem {
+export interface iBooksItem {
   title: string;
+	abbrev: string;
   bookId: string;
   authorId: string;
   allegedPages: number;
@@ -15,6 +16,7 @@ interface iBooksItem {
 export const books: iBooksItem[] = [
 	{
 		title: "Throne of Glass",
+		abbrev: "TOG",
 		bookId: "484bed5d-90f2-4600-b447-459ab78970b6",
 		authorId: "306dacab-178f-43ff-a547-381ffbaa24a8",
 		allegedPages: 432,
@@ -26,6 +28,7 @@ export const books: iBooksItem[] = [
 	},
 	{
 		title: "Crown of Midnight",
+		abbrev: "COM",
 		bookId: "c89aebd5-d89c-4d0f-8430-ad04cd93e517",
 		authorId: "306dacab-178f-43ff-a547-381ffbaa24a8",
 		allegedPages: 448,
@@ -37,6 +40,7 @@ export const books: iBooksItem[] = [
 	},
 	{
 		title: "The Assassin's Blade",
+		abbrev: "TAB",
 		bookId: "d1351e32-8ad8-4d1d-96fe-2f4de2d123ac",
 		authorId: "306dacab-178f-43ff-a547-381ffbaa24a8",
 		allegedPages: 464,
@@ -48,6 +52,7 @@ export const books: iBooksItem[] = [
 	},
 	{
 		title: "Heir of Fire",
+		abbrev: "HOF",
 		bookId: "a9583c65-f983-4ac4-9cc4-c7940e76b99e",
 		authorId: "306dacab-178f-43ff-a547-381ffbaa24a8",
 		allegedPages: 592,
@@ -59,6 +64,7 @@ export const books: iBooksItem[] = [
 	},
 	{
 		title: "Queen of Shadows",
+		abbrev: "QOS",
 		bookId: "282bd5a9-7618-4149-9d1d-f008e0f6010d",
 		authorId: "306dacab-178f-43ff-a547-381ffbaa24a8",
 		allegedPages: 672,
@@ -70,6 +76,7 @@ export const books: iBooksItem[] = [
 	},
 	{
 		title: "Empire of Storms",
+		abbrev: "EOS",
 		bookId: "b8ad5cfe-7ddf-40ab-a205-0d7e4d95ad19",
 		authorId: "306dacab-178f-43ff-a547-381ffbaa24a8",
 		allegedPages: 720,
@@ -81,6 +88,7 @@ export const books: iBooksItem[] = [
 	},
 	{
 		title: "Tower of Dawn",
+		abbrev: "TOD",
 		bookId: "a8d0c8d5-2dd1-45f6-a1c0-c404e4b8c4e0",
 		authorId: "306dacab-178f-43ff-a547-381ffbaa24a8",
 		allegedPages: 688,
@@ -92,6 +100,7 @@ export const books: iBooksItem[] = [
 	},
 	{
 		title: "Kingdom of Ash",
+		abbrev: "KOA",
 		bookId: "56e0720c-5d6f-451a-8636-2bd67e8ddec8",
 		authorId: "306dacab-178f-43ff-a547-381ffbaa24a8",
 		allegedPages: 992,
@@ -103,6 +112,7 @@ export const books: iBooksItem[] = [
 	},
 	{
 		title: "Crescent City",
+		abbrev: "CC",
 		bookId: "02b300da-179c-465c-8983-dfd1f1e974b1",
 		authorId: "306dacab-178f-43ff-a547-381ffbaa24a8",
 		allegedPages: 816,
@@ -114,6 +124,7 @@ export const books: iBooksItem[] = [
 	},
 	{
 		title: "House of Sky and Breath",
+		abbrev: "HOSAB",
 		bookId: "50943c7b-c48d-49fb-a08f-9847c71e76f8",
 		authorId: "306dacab-178f-43ff-a547-381ffbaa24a8",
 		allegedPages: 768,
@@ -125,6 +136,7 @@ export const books: iBooksItem[] = [
 	},
 	{
 		title: "House of Flame and Shadow",
+		abbrev: "HOFAS",
 		bookId: "4b770dad-96a7-4b37-a636-977af7818a0a",
 		authorId: "306dacab-178f-43ff-a547-381ffbaa24a8",
 		allegedPages: 848,
@@ -134,6 +146,17 @@ export const books: iBooksItem[] = [
 		seriesId: "7ec7fdbf-5b71-43ed-ac5a-4dfa7e98cb57",
 		seriesNum: 3
 	},
+	// {
+	// 	title: "FAKE BOOK",
+	// 	bookId: "544fa2c9-332e-4d5d-a85f-4c58b9cfb453",
+	// 	authorId: "306dacab-178f-43ff-a547-381ffbaa24a8",
+	// 	allegedPages: 104,
+	// 	actualPages: undefined,
+	// 	pubDate: undefined,
+	// 	isbn: undefined,
+	// 	seriesId: "",
+	// 	seriesNum: 0
+	// },
 ];
 
 export interface iAuthorItem {
